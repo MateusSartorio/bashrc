@@ -29,4 +29,8 @@ unset rc
 alias code="flatpak run com.visualstudio.code"
 alias open="xdg-open"
 
-PS1="\e[1;32m\u@\H:\w\]$ \e[0m"
+export PS1="\e[1;32m[\W]\$ \e[m"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
